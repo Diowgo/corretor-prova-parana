@@ -14,6 +14,7 @@ const inputQuestoes = inputs[1];
 console.log(table);
 
 function construirTabela(nota, questoes) {
+    body.innerHTML = "";
     for(let i = 0; i <= questoes; i++) {
 
         let valorNota = 10*i/questoes * nota / 10;
