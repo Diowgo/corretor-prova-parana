@@ -42,9 +42,11 @@ function conversao(n, q) {
     q = Number(q);
 
     if (n && q) {
-        return {
-            nota: n,
-            questoes: q
+        if (n > 0 && q > 0) {
+            return {
+                nota: n,
+                questoes: q
+            }
         }
     } else {
         return false
