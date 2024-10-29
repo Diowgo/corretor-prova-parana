@@ -10,24 +10,37 @@
     font-family: 'roboto-regular';
 }
 
+html {
+    font-size: 10px;
+}
+
 
 
 table, th, td {
-    border: 1px solid black;
     border-collapse: collapse;
-    padding: 0 10px;
+    padding: 5px 10px;
 }
+
 
 tr:nth-of-type(2n+1) {
-    background-color: #eaeaea;
-}
-
-tr:nth-of-type(2n) {
     background-color: #fafafa;
 }
 
+tr:nth-of-type(2n) {
+    background-color: #eaeaea;
+}
+
+th {
+    background-color: #eaeaee;
+}
+
+tr {
+    text-align: center;
+}
+
 .container {
-    width: 480px;
+    width: 90vw;
+    max-width: 720px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -40,28 +53,49 @@ header {
 }
 
 header p {
-    max-width: 90vw;
+    max-width: 80vw;
     min-width: 300px;
-    width: 100%;
+    width: 90vw;
+    max-width: 720px;
+}
+
+p {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
 }
 
 .container-input {
     margin: 10px 0;
     display: flex;
     flex-direction: column;
+
 }
 
 .container-input input {
     padding: 10px;
     margin: 5px;
+    padding: 2rem;
+    border-radius: 5px;
 }
 
 .container-input button {
+    margin: 2rem 0;
     display: block;
     padding: 20px;
     font-size: 18px;
+    background-color: #004cff;
+    border: 0;
+    border-radius: 10px;
+    color: #eaeaea;
 }
 
-.container{
-    scale: 2;
+table {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 2rem;
+    font-size: 2rem;
 }
